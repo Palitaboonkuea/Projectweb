@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Sriracha', cursive;
+    text-decoration: none;
+}
+/* header
+{
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    background-color: rgb(249, 186, 221);
+}
+header ul 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+header ul li
+{
+    list-style: none;
+    margin-left: 30px;
+}
+.profile
+{
+    margin-right:30px ;
+}
+.button 
+{
+    border-radius:20px ;
+    padding: 0.2em 0.5em 0.2em 0.5em;
+    color: rgb(39, 37, 37);
+    text-decoration: none;
+    font-family: 'Sriracha', cursive;
+    
+}
+.logo 
+{
+    text-decoration: none;
+    color:black;
+    font-size: 2em;
+    margin-left: 30px;
+    padding: 0px;
+} */
+/* body{
+    background-position: center;
+    background-size: cover;
+    box-sizing: border-box;
+    font-family: Prompt,sans-serif;
+} */
+.container{
+    width: 100vw;
+    background: rgb(236, 209, 220);
+    margin: 0 auto;
+    display: flex;
+  }
+  .sidebar{
+    width: 20%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    background: rgb(250, 183, 220);
+  }
+  .pro{
+    width: 80%;
+    padding: 10px;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+  }
+  .sidebar-search {
+    padding: 10px;
+    border: 2px solid transparent;
+    width: 100%;
+    font-size: 1.2vw;
+    outline: none;
+    border-radius: 5px;
+    background: #f2f2f2;
+    transition: 0.3s;
+    margin-bottom: 20px;
+  }
+  .sidebar-search:focus {
+    border: 2px solid #030303;
+  }
+  .sidebar-items {
+    background: #f2f2f2;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #e5e5e5;
+    color: #000;
+    transition: 300ms;
+    font-size: 1.2vw;
+  }
+  .sidebar-items:hover {
+    background: #f588c4;
+    color: #fff;
+  }
+
+  .detail{
+    background: rgb(255, 255, 255);
+    border-radius: 20px;
+    margin: 0 auto;
+    margin-top: 2vw;
+    
+  }
+  h1{
+    text-align: center;
+  } 
+  .b-cart{
+    text-align: center;
+  }
+  

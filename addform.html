@@ -1,0 +1,82 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        h1 {
+            text-align: center;
+
+        }
+
+        body {
+            box-sizing: border-box;
+        }
+
+        .menu-bar {
+            background: pink;
+            text-align: center;
+        }
+
+        .menu-bar ul {
+            display: inline-flex;
+            list-style: none;
+            color: #fff;
+        }
+
+        .menu-bar ul li {
+            width: 120px;
+            margin: 15px;
+            padding: 15px;
+        }
+
+        .active,
+        .menu-bar ul li:hover {
+            background: skyblue;
+            border-radius: 3px;
+        }
+
+        .layout {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="menu-bar">
+        <ul>
+            <li class="active">
+                <a href="http://localhost/manage.html">Home</a>
+            </li>
+            <li>
+                About us
+            </li>
+        </ul>
+    </div>
+    <h1>เพิ่มสินค้า</h1>
+    <div class="layout">
+        <form name="form1" action="add.php" method="post" enctype="multipart/form-data">
+            รหัสสินค้า: <input type="text" name="รหัสสินค้า"><br>
+            ชื่อสินค้า: <input type="text" name="ชื่อสินค้า"><br>
+            ราคา: <input type="number" name="ราคาสินค้า"><br>
+            จำนวนสินค้า: <input type="number" name="จำนวนสินค้า"><br>
+            รายละเอียดสินค้า:<textarea name="รายละเอียดสินค้า" rows="3" cols="40"></textarea><br>
+            รหัสพนักงาน: <input type="text" name="รหัสพนักงาน"><br>
+            รหัสประเภทสินค้า: <input type="text" name="รหัสประเภทสินค้า" class="typeproduct"><br>
+            <input type="file" name="file1" required>
+            <input type="submit" value="เพิ่มสินค้า" class="button" onclick="myFunction()">
+            <script>
+                function myFunction() {
+                  alert("เพิ่มสำเร็จ!");
+                }
+                </script>
+        </form>
+    </div>
+
+</body>
+
+</html>
